@@ -1,0 +1,1 @@
+{"version":3,"file":"error.registry.js","sourceRoot":"","sources":["../../src/errors/error.registry.ts"],"names":[],"mappings":";;;AAAa,QAAA,aAAa,GAAG;IAC3B,IAAI,EAAE;QACJ,IAAI,EAAE,MAAM;QACZ,OAAO,EAAE,YAAY;KACtB;IACD,MAAM,EAAE;QACN,UAAU,EAAE;YACV,IAAI,EAAE,mBAAmB;YACzB,OAAO,EAAE,0BAA0B;SACpC;KACF;CACF,CAAC"}

@@ -1,0 +1,63 @@
+extends:
+  - airbnb-base
+  - plugin:@typescript-eslint/recommended
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  project: './tsconfig.json'
+  sourceType: module
+
+plugins:
+  - '@typescript-eslint'
+
+rules:
+  max-len:
+    - error
+    - 120
+  import/prefer-default-export: off
+  import/no-cycle: off
+  '@typescript-eslint/lines-between-class-members': off
+  no-await-in-loop: off
+  indent: off
+  '@typescript-eslint/no-empty-function': off
+  '@typescript-eslint/indent':
+    - error
+    - 2
+    - FunctionDeclaration:
+        parameters: first
+      ignoredNodes:
+        - 'FunctionExpression > .params[decorators.length > 0]'
+        - 'FunctionExpression > .params > :matches(Decorator, :not(:first-child))'
+        - 'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key'
+  no-void: off
+  no-console: off
+  quotes:
+    - error
+    - single
+  '@typescript-eslint/unbound-method': off
+  class-methods-use-this: off
+  no-empty-function: off
+  lines-between-class-members: off
+  no-useless-constructor: off
+  semi:
+    - error
+    - always
+  comma-dangle:
+    - error
+    - always-multiline
+  object-curly-spacing:
+    - error
+    - always
+  import/no-unresolved: off
+  import/extensions: off
+
+env:
+  node: true
+  es6: true
+
+overrides:
+  - files:
+      - '*.ts'
+    rules:
+      no-undef: off

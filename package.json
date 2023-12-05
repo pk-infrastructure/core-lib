@@ -1,0 +1,36 @@
+{
+  "name": "@pk-infrastructure/core",
+  "version": "0.1.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/pk-infrastructure/core-lib"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "log4js": "^6.9.1",
+    "nats": "^2.18.0",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "4.8.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "ts-node": "^10.9.1"
+  },
+  "keywords": [],
+  "author": "Paul Kryvenko",
+  "license": "GPL-3.0-only"
+}
